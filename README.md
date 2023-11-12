@@ -1,5 +1,5 @@
 # VideoTube-OracleDB
-This is a YouTube clone made in PHP by Reece Keeny in his Udemy course which I took long ago and coded this project with him. I got interested into learning Oracle DB and decided to convert it to use Oracle instead of MySQL.
+This is a YouTube clone made in PHP by Reece Keeny in his Udemy course which I took long ago and coded it with him. I got interested in learning Oracle DB and decided to convert it to use Oracle instead of MySQL.
 
 To do list:
 1) Verify functionality on Linux and Docker.
