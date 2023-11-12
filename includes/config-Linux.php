@@ -1,5 +1,16 @@
 <?php
+ob_start(); //Turns on output buffering 
+session_start();
 
+date_default_timezone_set("Europe/Prague");
+
+//try {
+//    $con = new PDO("mysql:dbname=VideoTube;host=localhost", "newuser", "yes");
+//    $con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+//}
+//catch (PDOException $e) {
+//    echo "Connection failed: " . $e->getMessage();
+//}
 
 $tns = "  
 (DESCRIPTION =
@@ -15,16 +26,10 @@ $db_username = "C##VideoTube";
 $db_password = "123";
 try{
     $conn = new PDO("odbc:ORCL2",$db_username,$db_password); 
-	echo "successfull connection";
-	$query = $conn->prepare("SELECT * FROM users WHERE username = 'reece-kenney'");
-	$query->execute();
 }catch(PDOException $e){
    echo "Connection failed: " . $e->getMessage();
-}
-
 
 
 
 
 ?>
-                
