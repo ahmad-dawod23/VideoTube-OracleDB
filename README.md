@@ -6,7 +6,7 @@ To do list:
 2) Add a working docker compose file.
 3) Add an SQL file that creates the database and seeds data into it.
 4) Fix bugs with subscriber count and other small things.
-5) Add new features?
+5) Kubernetes yaml?
 
 
 How to deploy:
