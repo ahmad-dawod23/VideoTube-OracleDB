@@ -15,7 +15,7 @@ date_default_timezone_set("Europe/Prague");
 $db_username = "C##VideoTube";
 $db_password = "123";
 try{
-    $con = new PDO("odbc:ORCL2",$db_username,$db_password); 
+    $con = new PDO("odbc:ORCL3",$db_username,$db_password); 
 	$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 }catch(PDOException $e){
    echo "Connection failed: " . $e->getMessage();
