@@ -4,7 +4,7 @@ Deployment of this project assumes a level of knowledge in Oracle, You need to c
 
 To do list:
 1) Verify functionality on Linux.
-2) ~~Add an SQL file that creates the database and seeds data into it, so the whole database can be deployed from it.~~ Done. Seed file added.
+2) ~~Add an SQL file that creates the database and seeds data into it, so the whole database can be deployed from it.~~ Done. DBCreator.sql seed file added.
 3) Fix bugs with subscriber count and other small things.
 4) Add a working docker compose file and maybe a Kubernetes yaml? once i figure out how to use oracle instant client from within a docker container.
 
