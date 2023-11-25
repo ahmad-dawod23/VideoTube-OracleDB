@@ -10,14 +10,14 @@ class Account {
 
     public function login($un, $pw) {
         $pw = hash("sha512", $pw);
-
-        $query = $this->con->prepare("SELECT * FROM users WHERE username=:un AND password=:pw");
-        $query->bindParam(":un", $un);
-        $query->bindParam(":pw", $pw);
-
-        $query->execute();
-
-        if($query->rowCount() == 1) {
+        
+        $query1 = $this->con->prepare("SELECT count(*) as count FROM users WHERE username=:un AND password=:pw");
+        $query1->bindParam(":un", $un);
+        $query1->bindParam(":pw", $pw);
+        $query1->execute();
+        $data = $query1->fetch(PDO::FETCH_ASSOC);
+        $rownum = intval($data["COUNT"]);
+        if($rownum == 1) {
             return true;
         }
         else {
