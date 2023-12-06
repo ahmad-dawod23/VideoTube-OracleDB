@@ -12,18 +12,22 @@ date_default_timezone_set("Europe/Prague");
 //    echo "Connection failed: " . $e->getMessage();
 //}
 
+$tns = "  
+(DESCRIPTION =
+    (ADDRESS_LIST =
+      (ADDRESS = (PROTOCOL = TCP)(HOST = 172.19.128.1)(PORT = 1521))
+    )
+    (CONNECT_DATA =
+      (SERVICE_NAME = FREEPDB1)
+    )
+  )
+       ";
 $db_username = "C##VideoTube";
 $db_password = "123";
 try{
-    $con = new PDO("odbc:ORCL3",$db_username,$db_password); 
-	$con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
+    $conn = new PDO("odbc:FREE",$db_username,$db_password); 
 }catch(PDOException $e){
-   echo "Connection failed: " . $e->getMessage();
-}
-
-
-
-
+   echo "Connection failed: " . $e->getMessage();}
 
 
 
