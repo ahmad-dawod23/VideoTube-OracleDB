@@ -15,5 +15,5 @@ How to deploy:
 1) You can deploy this on windows' IIS with FastCGI handler or you can use Apache.
 2) Go to includes/config.php and add your correct database user and password.
 3) For Linux, please delete the includes/config.php file and the includes\classes\VideoProcessor.php and replace them with their Linux counterparts (which are included).
-4) Install Oracle client and create an ODBC instance. The OCI driver never worked for me at all in Windows (Not sure why).
-5) Build the docker image and deploy on Docker.
+4) For Windows, Install Oracle client and create an ODBC instance. The OCI driver never worked for me at all in Windows (Not sure why).
+5) To deploy on Docker, simply build the docker image.
